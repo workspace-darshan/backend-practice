@@ -1,5 +1,6 @@
 const express = require('express')
 const app = express()
+require("dotenv").config();
 
 app.use('/', (req, res, next) => {
     res.send({
@@ -7,6 +8,6 @@ app.use('/', (req, res, next) => {
     })
 })
 
-app.listen(5000, () => {
+app.listen(process.env.PORT, () => {
     console.log('backend running on port 5000 =>>>')
 })

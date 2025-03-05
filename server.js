@@ -4,7 +4,9 @@ require("dotenv").config();
 
 app.use('/', (req, res, next) => {
     res.send({
-        msg: "This is auto Depolyment using CI/CD pippelines ....great Darshan !!"
+        data: [
+            { id: 1, name: "darhan", age: 16 },
+        ]
     })
 })
 

@@ -4,7 +4,7 @@ require("dotenv").config();
 
 app.use('/', (req, res, next) => {
     res.send({
-        msg: "Hello fron backend"
+        msg: "This is auto Depolyment using CI/CD pippelines ....great Darshan !!"
     })
 })
 
